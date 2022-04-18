@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Higher LED iluminación para cultivos de interior</title>
+    <meta name="description" content="Higher LED Luces para cultivos de interior - Contacto & Dónde encontrarnos.">
 </head>
 
 <body>
@@ -37,10 +38,10 @@
                             <a class="dropdown-item menu_item animate__animated" href="./us.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="dropdown-item menu_item animate__animated" href="./contact-location.html#contact">Contacto</a>
+                            <a class="dropdown-item menu_item animate__animated" href="#contact">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="dropdown-item menu_item animate__animated" href="./contact-location.html#location">Ubicación</a>
+                            <a class="dropdown-item menu_item animate__animated" href="#location">Ubicación</a>
                         </li>
                     </ul>
                     <div class="d-flex social_items">
@@ -67,29 +68,49 @@
                     </a>
                 </div>
                 <div class="col-12 d-flex justify-content-center">
-                    <h1 class="animate__animated animate__fadeIn" id="title">Nosotros</h1>
+                    <h1 class="animate__animated animate__fadeIn" id="title">Contacto & ubicación</h1>
                 </div>
             </div>
         </header>
         <!-- -------------------------------- main --------------------------------- -->
         <main class="container-fluid principal">
-
-            <div class="us-container row bg-light">
-                <div class="col-12 d-flex justify-content-center">
-                    <img class="img-fluid" src="./img/tres-acordes-min.jpg" alt="Fundadores de Higher LED">
-                </div>
-                <div class="col">
-                    <p class="info_text us_text">Somos un grupo de tres amigos, un día como cualquier otro, lidiando con problemas de cultivos en
-                        interior gracias a algunos de los fastidios que trae consigo los focos de sodio, además de la
-                        factura de energía eléctrica comenzamos la investigación para resolver este problema, nos encontramos con una nueva
-                        tecnología que prometía mucho. Tomamos el riesgo y quisimos probarla sustituyendo nuestros viejos sodios. Los resultados fueron impresionantes, tanto el consumo energético como los
-                        resultados de cosecha, se optimizaron increiblemente. Al notar que esta nueva tecnología fue tan
-                        eficaz para su proposito, y que no había muchas opciones en el mercado además de dificiles de
-                        conseguir, decídimos estudiar y diseñar artefactos de iluminación LED para que muchas más
-                        personas puedan conocer y disfrutar de los beneficios de esta novedosa tecnología que no para de
-                        avanzar hacia la excelencia.
-                    </p>
-                </div>
+            <div class="container">
+                <section class="container-fluid form_container">
+                    <form id="contact" class="contactForm">
+                        <h2 class="centerTitle">Contactános</h2>
+                        <p class="formText">Envíanos un mensaje y en breves nos pondremos en contacto contigo.</p>
+                        <div class="mb-3 formLabel">
+                            <label for="input" class="form-label">Nombre</label>
+                            <input required="obligatorio" type="text" class="form-control" id="input"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3 formLabel">
+                            <label for="input" class="form-label">Apellido</label>
+                            <input required="obligatorio" type="text" class="form-control" id="input">
+                        </div>
+                        <div class="mb-3 formLabel">
+                            <label for="input" class="form-label">Asunto</label>
+                            <input required="obligatorio" type="text" class="form-control" id="input">
+                        </div>
+                        <div class="mb-3">
+                            <label for="input" class="form-label">Mensaje</label>
+                            <input required="obligatorio" type="text" class="form-control" id="textInput">
+                        </div>
+                        <div class="d-flex justify-content-center btn_send">
+                            <a type="submit" id="form_btn" href="send.php"
+                                class="btn btn-primary btn_buy animate__animated">Enviar</a>
+                        </div>
+                    </form>
+                </section>
+                <section class="container-fluid locationContainer bg-light">
+                    <div class="d-flex justify-content-center"><h2 id="location" class="darkText subtitle centerTitle">¿Dónde encontrarnos?</h2></div>
+                    <div class="d-flex justify-content-center location">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54301.6058147514!2d-56.01695432269804!3d-31.719982302213328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a84e6295b41253%3A0xda822eef98b12c43!2s45000%20Tacuaremb%C3%B3%2C%20Departamento%20de%20Tacuaremb%C3%B3!5e0!3m2!1ses-419!2suy!4v1646004293704!5m2!1ses-419!2suy"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            id="googleMaps"></iframe>
+                    </div>
+                </section>
             </div>
 
         </main>

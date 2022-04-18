@@ -1,7 +1,7 @@
 {
-  "name": "higherleds",
+  "name": "higher-leds",
   "version": "1.0.0",
-  "description": "Proyecto de desarrollo web para CoderHouse",
+  "description": "Sitio web dedicado a la venta de productos de iluminación LED",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -1,0 +1,17 @@
+// Header
+#higherLed_logo {
+    width: 100%;
+    height: auto;
+    padding: 5px 5px;
+    position: relative;
+    left: 7px;
+}
+
+.principal,
+.principal_products {
+    color: map-get($map: $colors, $key: 'secondary');
+}
+
+.white {
+    color: map-get($map: $colors, $key: 'keyColor');
+}

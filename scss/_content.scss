@@ -1,386 +1,134 @@
 // Contenido
-body{
-    background: $mainColor;
-}
+body {
+    background: map-get($map: $colors, $key: 'principal');
 
-.facebook1 {
-    width: 2.7rem;
-    height: 2.7rem;
-}
-
-.instagram1 {
-    width: 2.7rem;
-    height: 2.7rem;
-}
-
-#logo_container {
-    background-image: url(https://www.publicdomainpictures.net/pictures/310000/nahled/green-leaves-background-1569939735IDs.jpg);
-}
-
-/* --------------------------------- Header --------------------------------- */
-#higherLed_logo {
-        width: 100%;
-        height: auto;
-        padding: 5px 5px;
-}
-
-.principal, .principal_products {
-    background: $secondColor;
-}
-
-.white {
-    color: $keyColor;
-}
-
-/* ---------------------------------- Main ---------------------------------- */
-.sliderPrincipal {
-    padding-bottom: 1rem;
-}
-
-.sliderPrincipal img {
-    width: 208px;
-    height: 172.25px;
-}
-
-.grid_container {
-    display: grid;
-    grid-template-areas: "image1"
-    "image2";
-    grid-template-rows: auto auto;
-}
-
-.img1 {
-    grid-area: image1;
-}
-
-.img1 img, .img2 img {
-    padding: 1rem 0%;
-    width: 225px;
-    height: 225px;
-}
-
-.img2 {
-    grid-area: image2;
-}
-
-.img3 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.img3 img {
-    position: relative;
-    left: 3%;
-}
-
-#textInput {
-    height: 10rem;
-}
-
-.contactForm label {
-    color: $keyColor;
-}
-
-.centerTitle {
-    padding-top: 1rem;
-    text-align: center;
-}
-
-.formText {
-    text-align: center;
-    padding-top: 5px;
-}
-
-.btn_send {
-    padding-bottom: 1rem;
-}
-
-#form_btn {
-    margin-top: 1rem;
-}
-
-.locationContainer {
-    padding-bottom: 1rem;
-}
-
-.location {
-    overflow: hidden;
-    padding-bottom: 2rem;
-    padding-top: 1rem;
-}
-
-/* -------------------------------- PRODUCTOS ------------------------------- */
-
-/* ---------------------------------- Main ---------------------------------- */
-
-.main_container {
-    overflow: hidden;
-    padding: 1rem;
-}
-
-.product {
-    margin: 7px;
-}
-
-/* --------------------------------- GALERÍA -------------------------------- */
-
-.gallery_container div{
-    box-sizing: border-box;
-}
-
-.gallery_container {
-    margin: 0%;
-    padding: 0%;
-}
-
-.gallery_container img {
-    width: 100%;
-}
-
-.flex-row {
-    display: flex;
-    padding: 1rem;
-}
-
-.column {
-    padding: 1rem;
-}
-
-.column img {
-    margin-top: 3rem;
-}
-
-#firstImg {
-    margin-top: 0%;
-}
-
-/* --------------------------------- NOSOTROS -------------------------------- */
-
-.us_text, .us_title {
-    margin: 1rem;
-}
-
-/* ----------------------- BreakPoints / Media Queries ---------------------- */
-
-/* ---------------------------------- Index --------------------------------- */
-
-@media (min-width: 320px) {
-    .sliderPrincipal img {
-        width: 100%;
-        height: auto;
+    p {
+        text-align: center;
     }
-}
 
-@media (min-width: 425px) {
-    #higherLed_logo {
-        width: 50%;
-        height: auto;
-        padding: 5px 5px;
+    #logo_container {
+        background-image: url(https://www.publicdomainpictures.net/pictures/310000/nahled/green-leaves-background-1569939735IDs.jpg);
     }
+
+    .darkText {
+        color: $dark;
+    }
+
+    .principal {
+        background: map-get($map: $colors, $key: 'secondary');
+
+        .carousel-inner {
+            padding-top: 2rem;
+        }
+        
+        .img3 {
+            @include margin-top-bottom(1rem, 1rem);
+        
+            img {
+                position: relative;
+                left: 3%;
+            }
+        }
     
-    .img1 img, .img2 img {
-        width: 65%;
-        height: auto;
-    }
-}
-
-@media (min-width: 768px) {
-    #higherLed_logo {
-        width: 360px;
-        height: 251px;
-        padding: 5px 5px;
-    }
-
-    p, label, input {
-        font-size: 1.4rem;
-    }
-
-    .img1 img, .img2 img {
-        width: 493px;
-        height: 525px;
-    }
-
-    .img3 img {
-        width: 200%;
-    }
-}
-
-@media (min-width: 1024px) {
-    #title {
-        font-size: 3.5rem;
-    }
-
-    .subtitle, .subtitleII {
-        font-size: 3rem;
-    }
-
-    .formLabel input, #textInput {
-        font-size: 1.3rem;
-    }
-
-    .subtitleII {
-        margin-top: 2rem;
-    }
-
-    #form_btn {
-        font-size: 1.5rem;
-    }
-}
-
-@media (min-width: 1440px) {
-    .navbar-brand {
-        font-size: 1.8rem;
-    }
-
-    .facebook, .instagram {
-        width: 3rem;
-        height: 3rem;
-    }
-
-    #menuBar {
-        font-size: 1.5rem;
-    }
-
-    p, label, input {
-        font-size: 1.8rem;
-    }
-
-    .location {
-        height: 60rem;
-    }
-
-    #googleMaps {
-        width: 80%;
-        height: auto; 
-    }
-
-    .dropdown-item {
-        font-size: 1.3rem;
-    }
-}
-
-@media (min-width: 2560px) {
-    #higherLed_logo {
-        width: 660px;
-        height: 451px;
-        padding: 5px 5px;
-    }
-
-    .img1 img, .img2 img {
-        width: 60%;
-        height: auto;
-    }
-
-    .navbar-brand {
-        font-size: 2.7rem;
-    }
-
-    #menuBar {
-        font-size: 2.4rem;
-    }
-
-    #title {
-        font-size: 7rem;
-    }
-
-    .subtitle, .subtitleII {
-        font-size: 5.5rem;
-    }
-
-    p, label, input {
-        font-size: 3rem;
-    }
-
-    #textInput {
-        height: 20rem;
-    }
-
-    .formLabel input {
-        height: 5rem;
-        font-size: 2.5rem;
-    }
-
-    #textInput {
-        font-size: 2.5rem;
-    }
-
-    #form_btn {
-        font-size: 3.5rem;
-    }
-
-    .footerTitle {
-        font-size: 3.8rem;
-    }
-
-    .facebook1, .instagram1 {
-        width: 4.7rem;
-        height: 4.7rem;
-    }
-
-    .fbFooter a {
-        padding-right: 2%;
-    }
-
-    .igFooter a {
-        padding-left: 2%;
-    }
-
-    .locationContainer {
-        padding-bottom: 3rem;
-    }
-
-    .dropdown-item {
-        font-size: 2.5rem;
-    }
-}
-
-/* -------------------------------- Productos ------------------------------- */
-
-@media (min-width: 1440px) {
-    .product_title {
-        font-size: 3rem;
-    }
-
-    .product_text {
-        font-size: 2.8rem;
-    }
-
-    .btn_buy {
-        font-size: 2rem;
-    }
-}
-
-/* --------------------------------- Galería -------------------------------- */
-
-@media (min-width: 280px) and (max-width: 575px) {
-    .gallery_container img {
-        width: 100%;
-    }
+        .form_container {
+            @include margin-top-bottom(2%, 15%);
+            background-color: map-get($map: $colors, $key: 'keyColor');
     
-    .flex-row {
-        display: flex;
-        padding: 0%;
-    }
+            .contactForm {
     
-    .column {
-        padding: 5px;
-    }
+                #textInput {
+                    height: 10rem;
+                }
     
-    .column img {
-        margin-top: 2rem;
-    }
-}
+                .form-label, .centerTitle, .formText {
+                    @extend .darkText;
+                    text-align: center;
+                    padding-top: 1rem;
+                }
+                
+                .formText {
+                    padding-top: 5px;
+                }
+                
+                .btn_send {
+                    padding-bottom: 1rem;
+                }
+                
+                #form_btn {
+                    margin-top: 1rem;
+                }
+            }
+        }
 
-/* --------------------------------- Nosotros -------------------------------- */
+        .locationContainer {
+            margin-top: 15%;
+            background-color: map-get($map: $colors, $key: 'keyColor');
+    
+            h2 {
+                color: black;
+                padding: 1rem;
+            }
+        
+            .location {
+                overflow: hidden;
+                @include padding-top-bottom(1rem, 2rem);
+            }
+        }
 
-@media (min-width: 1440px) {
-    .us_title {
-        font-size: 3rem;
-    }
-}
+        .final_text {
+            margin-top: 2rem;
+        }
+        
+        .btn_buy, #form_btn {
+            background: map-get($map: $colors, $key: 'principal');
+        
+            &:hover {
+                font-weight: bold;
+                color: gold;
+                animation: tada;
+                animation-duration: 2s;
+            }
+        }
 
-@media (min-width: 2560px) {
-    .us_title {
-        font-size: 5rem;
+        .album {
+            padding: 1rem;
+            margin: 5px;
+    
+            .album_img {
+                padding: 5px;
+            }
+    
+            .row_1 {
+                display: grid;
+            }
+    
+            .row_2 {
+                display: grid;
+            }
+        }
+
+        .info-container {
+            margin: 0% 1rem;
+
+            .info_text {
+                padding: 1rem;
+            }
+        }
+        
+        .us-container {
+            margin: 0% 1rem;
+
+            .us_text {
+                color: $dark;
+            }
+        }
+
+        .productList {
+            margin: 5px;
+
+            .product_container {
+                padding: 1rem;
+            }
+        }
     }
 }

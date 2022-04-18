@@ -2,22 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
 
-$fontMain: 'Oswald', sans-serif;
-$fontSecondary: 'Oxygen', sans-serif;
-
 body p {
-    font-family: $fontSecondary;
-    color: $keyColor;
+    @include font();
 }
 
 h1, h2, h3 {
-    font-family: $fontSecondary;
-    color: $keyColor;
+    @include font();
 }
 
 #title, .subtitle {
-    text-align: center;
-    color: $keyColor;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    @include titles();
 }

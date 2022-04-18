@@ -1,6 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap");
+* {
+  margin: 0%;
+  padding: 0%; }
+
 body p {
   font-family: "Oxygen", sans-serif;
   color: #f5f6fa; }
@@ -27,279 +31,127 @@ h1, h2, h3 {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 );
   /* IE6-9 */ }
 
-.btn_buy:hover {
-  font-weight: bold;
-  color: gold;
-  animation: tada;
-  animation-duration: 2s; }
+.menu_item {
+  color: #f5f6fa; }
+  .menu_item:hover {
+    color: gold;
+    animation: tada;
+    animation-duration: 1.5s;
+    font-weight: bold;
+    background: none; }
 
-.btn_buy {
-  background: linear-gradient(90deg, #0b075b 0%, #0c609f 50%, #0d0563 100%); }
+.home {
+  color: #f5f6fa; }
+  .home:hover {
+    color: gold;
+    animation: tada;
+    animation-duration: 1.5s;
+    font-weight: bold;
+    background: none; }
 
-.facebook {
-  width: 1.5rem;
-  height: 1.5rem;
-  padding-bottom: 2px;
-  padding-right: 2px; }
+.social_items {
+  flex-wrap: wrap; }
+  .social_items .item_img {
+    animation: heartBeat; }
+    .social_items .item_img:hover {
+      animation: tada;
+      animation-duration: 2s; }
 
-.instagram {
-  width: 1.5rem;
-  height: 1.5rem;
-  padding-bottom: 2px;
-  padding-right: 2px; }
+.logo-fb {
+  width: 30px;
+  height: 24px; }
 
-body {
-  background: linear-gradient(90deg, #0b075b 0%, #0c609f 50%, #0d0563 100%); }
+.logo-ig {
+  width: 32px;
+  height: 26px; }
 
-.facebook1 {
-  width: 2.7rem;
-  height: 2.7rem; }
-
-.instagram1 {
-  width: 2.7rem;
-  height: 2.7rem; }
-
-#logo_container {
-  background-image: url(https://www.publicdomainpictures.net/pictures/310000/nahled/green-leaves-background-1569939735IDs.jpg); }
-
-/* --------------------------------- Header --------------------------------- */
 #higherLed_logo {
   width: 100%;
   height: auto;
-  padding: 5px 5px; }
+  padding: 5px 5px;
+  position: relative;
+  left: 7px; }
 
-.principal, .principal_products {
-  background: linear-gradient(90deg, #ff4400 0%, #ffa200 50%, #ff4400 100%); }
+.principal,
+.principal_products {
+  color: #ff4400 linear-gradient(90deg, #ff4400 0%, #ffa200 50%, #ff4400 100%); }
 
 .white {
   color: #f5f6fa; }
 
-/* ---------------------------------- Main ---------------------------------- */
-.sliderPrincipal {
-  padding-bottom: 1rem; }
-
-.sliderPrincipal img {
-  width: 208px;
-  height: 172.25px; }
-
-.grid_container {
-  display: grid;
-  grid-template-areas: "image1" "image2";
-  grid-template-rows: auto auto; }
-
-.img1 {
-  grid-area: image1; }
-
-.img1 img, .img2 img {
-  padding: 1rem 0%;
-  width: 225px;
-  height: 225px; }
-
-.img2 {
-  grid-area: image2; }
-
-.img3 {
-  margin-top: 1rem;
-  margin-bottom: 1rem; }
-
-.img3 img {
-  position: relative;
-  left: 3%; }
-
-#textInput {
-  height: 10rem; }
-
-.contactForm label {
-  color: #f5f6fa; }
-
-.centerTitle {
-  padding-top: 1rem;
-  text-align: center; }
-
-.formText {
-  text-align: center;
-  padding-top: 5px; }
-
-.btn_send {
-  padding-bottom: 1rem; }
-
-#form_btn {
-  margin-top: 1rem; }
-
-.locationContainer {
-  padding-bottom: 1rem; }
-
-.location {
-  overflow: hidden;
-  padding-bottom: 2rem;
-  padding-top: 1rem; }
-
-/* -------------------------------- PRODUCTOS ------------------------------- */
-/* ---------------------------------- Main ---------------------------------- */
-.main_container {
-  overflow: hidden;
-  padding: 1rem; }
-
-.product {
-  margin: 7px; }
-
-/* --------------------------------- GALERÍA -------------------------------- */
-.gallery_container div {
-  box-sizing: border-box; }
-
-.gallery_container {
-  margin: 0%;
-  padding: 0%; }
-
-.gallery_container img {
-  width: 100%; }
-
-.flex-row {
-  display: flex;
-  padding: 1rem; }
-
-.column {
-  padding: 1rem; }
-
-.column img {
-  margin-top: 3rem; }
-
-#firstImg {
-  margin-top: 0%; }
-
-/* --------------------------------- NOSOTROS -------------------------------- */
-.us_text, .us_title {
-  margin: 1rem; }
-
-/* ----------------------- BreakPoints / Media Queries ---------------------- */
-/* ---------------------------------- Index --------------------------------- */
-@media (min-width: 320px) {
-  .sliderPrincipal img {
-    width: 100%;
-    height: auto; } }
-
-@media (min-width: 425px) {
-  #higherLed_logo {
-    width: 50%;
-    height: auto;
-    padding: 5px 5px; }
-  .img1 img, .img2 img {
-    width: 65%;
-    height: auto; } }
-
-@media (min-width: 768px) {
-  #higherLed_logo {
-    width: 360px;
-    height: 251px;
-    padding: 5px 5px; }
-  p, label, input {
-    font-size: 1.4rem; }
-  .img1 img, .img2 img {
-    width: 493px;
-    height: 525px; }
-  .img3 img {
-    width: 200%; } }
-
-@media (min-width: 1024px) {
-  #title {
-    font-size: 3.5rem; }
-  .subtitle, .subtitleII {
-    font-size: 3rem; }
-  .formLabel input, #textInput {
-    font-size: 1.3rem; }
-  .subtitleII {
-    margin-top: 2rem; }
-  #form_btn {
-    font-size: 1.5rem; } }
-
-@media (min-width: 1440px) {
-  .navbar-brand {
-    font-size: 1.8rem; }
-  .facebook, .instagram {
-    width: 3rem;
-    height: 3rem; }
-  #menuBar {
-    font-size: 1.5rem; }
-  p, label, input {
-    font-size: 1.8rem; }
-  .location {
-    height: 60rem; }
-  #googleMaps {
-    width: 80%;
-    height: auto; }
-  .dropdown-item {
-    font-size: 1.3rem; } }
-
-@media (min-width: 2560px) {
-  #higherLed_logo {
-    width: 660px;
-    height: 451px;
-    padding: 5px 5px; }
-  .img1 img, .img2 img {
-    width: 60%;
-    height: auto; }
-  .navbar-brand {
-    font-size: 2.7rem; }
-  #menuBar {
-    font-size: 2.4rem; }
-  #title {
-    font-size: 7rem; }
-  .subtitle, .subtitleII {
-    font-size: 5.5rem; }
-  p, label, input {
-    font-size: 3rem; }
-  #textInput {
-    height: 20rem; }
-  .formLabel input {
-    height: 5rem;
-    font-size: 2.5rem; }
-  #textInput {
-    font-size: 2.5rem; }
-  #form_btn {
-    font-size: 3.5rem; }
-  .footerTitle {
-    font-size: 3.8rem; }
-  .facebook1, .instagram1 {
-    width: 4.7rem;
-    height: 4.7rem; }
-  .fbFooter a {
-    padding-right: 2%; }
-  .igFooter a {
-    padding-left: 2%; }
-  .locationContainer {
-    padding-bottom: 3rem; }
-  .dropdown-item {
-    font-size: 2.5rem; } }
-
-/* -------------------------------- Productos ------------------------------- */
-@media (min-width: 1440px) {
-  .product_title {
-    font-size: 3rem; }
-  .product_text {
-    font-size: 2.8rem; }
-  .btn_buy {
-    font-size: 2rem; } }
-
-/* --------------------------------- Galería -------------------------------- */
-@media (min-width: 280px) and (max-width: 575px) {
-  .gallery_container img {
-    width: 100%; }
-  .flex-row {
-    display: flex;
-    padding: 0%; }
-  .column {
-    padding: 5px; }
-  .column img {
-    margin-top: 2rem; } }
-
-/* --------------------------------- Nosotros -------------------------------- */
-@media (min-width: 1440px) {
-  .us_title {
-    font-size: 3rem; } }
-
-@media (min-width: 2560px) {
-  .us_title {
-    font-size: 5rem; } }
+body {
+  background: linear-gradient(90deg, #0b075b 0%, #0c609f 50%, #0d0563 100%); }
+  body p {
+    text-align: center; }
+  body #logo_container {
+    background-image: url(https://www.publicdomainpictures.net/pictures/310000/nahled/green-leaves-background-1569939735IDs.jpg); }
+  body .darkText, body .principal .form_container .contactForm .form-label, body .principal .form_container .contactForm .centerTitle, body .principal .form_container .contactForm .formText {
+    color: black; }
+  body .principal {
+    background: #ff4400 linear-gradient(90deg, #ff4400 0%, #ffa200 50%, #ff4400 100%); }
+    body .principal .carousel-inner {
+      padding-top: 2rem; }
+    body .principal .img3 {
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
+      body .principal .img3 img {
+        position: relative;
+        left: 3%; }
+    body .principal .form_container {
+      margin-top: 2%;
+      margin-bottom: 15%;
+      background-color: #f5f6fa; }
+      body .principal .form_container .contactForm #textInput {
+        height: 10rem; }
+      body .principal .form_container .contactForm .form-label, body .principal .form_container .contactForm .centerTitle, body .principal .form_container .contactForm .formText {
+        text-align: center;
+        padding-top: 1rem; }
+      body .principal .form_container .contactForm .formText {
+        padding-top: 5px; }
+      body .principal .form_container .contactForm .btn_send {
+        padding-bottom: 1rem; }
+      body .principal .form_container .contactForm #form_btn {
+        margin-top: 1rem; }
+    body .principal .locationContainer {
+      margin-top: 15%;
+      background-color: #f5f6fa; }
+      body .principal .locationContainer h2 {
+        color: black;
+        padding: 1rem; }
+      body .principal .locationContainer .location {
+        overflow: hidden;
+        padding-top: 1rem;
+        padding-bottom: 2rem; }
+    body .principal .final_text {
+      margin-top: 2rem; }
+    body .principal .btn_buy, body .principal #form_btn {
+      background: linear-gradient(90deg, #0b075b 0%, #0c609f 50%, #0d0563 100%); }
+      body .principal .btn_buy:hover, body .principal #form_btn:hover {
+        font-weight: bold;
+        color: gold;
+        animation: tada;
+        animation-duration: 2s; }
+    body .principal .album {
+      padding: 1rem;
+      margin: 5px; }
+      body .principal .album .album_img {
+        padding: 5px; }
+      body .principal .album .row_1 {
+        display: grid; }
+      body .principal .album .row_2 {
+        display: grid; }
+    body .principal .info-container {
+      margin: 0% 1rem; }
+      body .principal .info-container .info_text {
+        padding: 1rem; }
+    body .principal .us-container {
+      margin: 0% 1rem; }
+      body .principal .us-container .us_text {
+        color: black; }
+    body .principal .productList {
+      margin: 5px; }
+      body .principal .productList .product_container {
+        padding: 1rem; }
 
 .footerTitle {
   text-align: center;
@@ -312,3 +164,246 @@ body {
 .fbFooter, .igFooter {
   margin-top: 5px;
   margin-bottom: 1rem; }
+
+.facebook1 {
+  width: 2.7rem;
+  height: 2.7rem;
+  animation: heartBeat; }
+  .facebook1:hover {
+    animation: tada;
+    animation-duration: 2s; }
+
+.instagram1 {
+  width: 2.8rem;
+  height: 2.8rem;
+  animation: heartBeat; }
+  .instagram1:hover {
+    animation: tada;
+    animation-duration: 2s; }
+
+/* ----------------------- BreakPoints / Media Queries ---------------------- */
+/* ---------------------------------- Index --------------------------------- */
+@media (min-width: 320px) {
+  .sliderPrincipal img {
+    width: 100%;
+    height: auto; } }
+
+@media (min-width: 425px) {
+  #higherLed_logo {
+    width: 360px;
+    height: 251px;
+    padding: 5px 5px; }
+  .main_text {
+    margin-top: 1.5rem; }
+  .img_container {
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+    .img_container .main_img {
+      width: 150%; } }
+
+@media (max-width: 425px) {
+  .img_container {
+    flex-wrap: wrap; }
+    .img_container .main_img {
+      margin-top: 1rem;
+      margin-bottom: 1rem; } }
+
+@media (max-width: 768px) {
+  .row_1 {
+    grid-template-areas: "album_img1" "album_img2" "album_img3";
+    grid-template-rows: auto auto auto; }
+  .row_2 {
+    grid-template-areas: "album_img4" "album_img5";
+    grid-template-rows: auto auto; } }
+
+@media (min-width: 768px) {
+  body p {
+    text-align: left;
+    font-size: 1.4rem; }
+  body .subtitle {
+    font-size: 2rem; }
+  body label,
+  body input {
+    font-size: 1.4rem; }
+  body .img3 img {
+    width: 200%; }
+  body .album {
+    padding: 1rem;
+    margin: 5px; }
+    body .album .album_img {
+      padding: 5px; }
+    body .album .row_1 {
+      display: grid;
+      grid-template-areas: "album_img1 album_img2 album_img3";
+      grid-template-rows: auto; }
+    body .album .row_2 {
+      display: grid;
+      grid-template-areas: "album_img4 album_img5";
+      grid-template-rows: auto; }
+  body .us_text {
+    padding: 3%; } }
+
+@media (min-width: 1024px) {
+  #title {
+    font-size: 3.2rem; }
+  .principal .subtitle {
+    font-size: 2.3rem; }
+  .principal .carousel-inner {
+    width: 85%;
+    left: 7.5%; }
+  .principal .main_text {
+    padding: 0% 2%; }
+  .principal .img_container .main_img {
+    width: 75%; }
+  .principal .img_container-2 img {
+    width: 75%; }
+  .principal .form_container {
+    margin-top: 7%;
+    margin-bottom: -3%;
+    background-color: #f5f6fa; }
+    .principal .form_container .formLabel input,
+    .principal .form_container #textInput {
+      font-size: 1.3rem; }
+    .principal .form_container #form_btn {
+      font-size: 1.5rem; } }
+
+@media (min-width: 1440px) {
+  #menuBar {
+    font-size: 1.5rem; }
+    #menuBar .navbar-brand {
+      font-size: 1.8rem; }
+    #menuBar .logo-fb {
+      width: 43px;
+      height: 38px; }
+    #menuBar .logo-ig {
+      width: 46px;
+      height: 40px; }
+  #title {
+    font-size: 3.2rem; }
+  .principal .subtitle {
+    font-size: 420%; }
+  .principal .btn_fix1 {
+    top: 0%; }
+  #title {
+    font-size: 470%; }
+  .centerTitle,
+  #location {
+    font-size: 370%; }
+  .formText {
+    font-size: 230%; }
+  p,
+  label,
+  input {
+    font-size: 1.8rem; }
+  .location {
+    height: 60rem; }
+  #googleMaps {
+    width: 80%;
+    height: auto; }
+  .dropdown-item {
+    font-size: 1.3rem; }
+  .product_title {
+    font-size: 3rem; }
+  .product_text {
+    font-size: 2.8rem; }
+  .btn_buy {
+    font-size: 1.4rem; }
+  .us_title {
+    font-size: 3rem; }
+  .facebook1 {
+    width: 3.7rem;
+    height: 3.7rem; }
+  .instagram1 {
+    width: 3.8rem;
+    height: 3.8rem; } }
+
+@media (min-width: 2560px) {
+  #menuBar .home {
+    font-size: 2.6rem;
+    position: relative;
+    bottom: 3.5px; }
+  #menuBar .dropdown-item {
+    font-size: 2.1rem; }
+  #menuBar .logo-I {
+    font-size: 2.3rem;
+    position: relative;
+    right: 3.5rem; }
+    #menuBar .logo-I .logo-fb {
+      width: 4rem;
+      height: 3.5rem;
+      position: relative;
+      bottom: 6px;
+      right: 11px; }
+  #menuBar .logo-II {
+    font-size: 2.3rem; }
+    #menuBar .logo-II .logo-ig {
+      width: 4rem;
+      height: 3.7rem;
+      position: relative;
+      bottom: 6px; }
+  #higherLed_logo {
+    width: 50%;
+    height: auto;
+    left: 25%; }
+  #title {
+    font-size: 666%; }
+  .principal .img_container {
+    margin-top: 4rem;
+    margin-bottom: 4rem; }
+    .principal .img_container .main_img {
+      width: 80%; }
+  .principal .subtitle {
+    font-size: 595%; }
+  .principal .main_text {
+    margin: 1rem;
+    padding: 1.5rem; }
+  .principal p,
+  .principal label,
+  .principal input {
+    font-size: 3rem; }
+  .principal .footerTitle {
+    font-size: 4rem; }
+  .principal .fbFooter a {
+    padding-right: 2%; }
+  .principal .igFooter a {
+    padding-left: 2%; }
+  .principal .form_container .formLabel input,
+  .principal .form_container #textInput {
+    font-size: 1.3rem; }
+  .principal .form_container #textInput {
+    height: 20rem; }
+  .principal .form_container .formLabel input {
+    height: 5rem;
+    font-size: 2.5rem; }
+  .principal .form_container #textInput {
+    font-size: 2.5rem; }
+  .principal .form_container #form_btn {
+    font-size: 2.7rem; }
+  .principal .locationContainer {
+    padding-bottom: 3rem; }
+  .principal .dropdown-item {
+    font-size: 2.5rem; }
+  .principal .us_title {
+    font-size: 5rem; }
+  .footerTitle {
+    font-size: 395%; }
+  .facebook1 {
+    width: 5.7rem;
+    height: 5.7rem;
+    margin-right: 3%; }
+  .instagram1 {
+    width: 5.8rem;
+    height: 5.8rem;
+    margin-left: 3%; } }
+
+/* --------------------------------- Galería -------------------------------- */
+@media (min-width: 280px) and (max-width: 575px) {
+  .gallery_container img {
+    width: 100%; }
+  .flex-row {
+    display: flex;
+    padding: 0%; }
+  .column {
+    padding: 5px; }
+  .column img {
+    margin-top: 2rem; } }

@@ -13,166 +13,159 @@
 
 <body>
   <div class="container-fluid">
-    <!-- --------------------------------- nav --------------------------------- -->
-    <nav id="menuBar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- ------------------------------- nav bar ------------------------------- -->
+    <nav id="menuBar" class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Inicio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
-          aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand home" href="index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Menú
-              </a>
-              <ul class="menu_list dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                <li><a class="dropdown-item" href="./products.html">Productos</a></li>
-                <li><a class="dropdown-item" href="./gallery.html">Galería</a></li>
-                <li><a class="dropdown-item" href="./promos.html">Ofertas</a></li>
-                <li><a class="dropdown-item" href="./us.html">Nosotros</a></li>
-                <li><a class="dropdown-item" href="./index.html#contact">Contacto</a></li>
-                <li><a class="dropdown-item" href="./index.html#location">Ubicación</a></li>
-              </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li class="nav-item">
+              <a class="dropdown-item menu_item animate__animated" href="./products.html">Productos</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Redes sociales
-              </a>
-              <ul class="menu_list dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                <li><a class="dropdown-item" target="_blank" href="https://www.facebook.com"><img
-                      src="./img/logotipo-oficial-facebook.png" class="img-fluid facebook" alt="Logo de Facebook">
-                    Facebook</a></li>
-                <li><a class="dropdown-item" target="_blank" href="https://www.instagram.com"><img
-                      src="./img/logotipo-oficial-instagram.png" class="img-fluid instagram" alt="Logo de Instagram">
-                    Instagram</a></li>
-              </ul>
+            <li class="nav-item">
+              <a class="dropdown-item menu_item animate__animated" href="./gallery.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="dropdown-item menu_item animate__animated" href="./info.html">Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="dropdown-item menu_item animate__animated" href="./us.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="dropdown-item menu_item animate__animated" href="./contact-location.html#contact">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="dropdown-item menu_item animate__animated" href="./contact-location.html#location">Ubicación</a>
             </li>
           </ul>
+          <div class="d-flex social_items">
+            <a class="navbar-brand animate__animated item_img logo-I" target="_blank" href="https://www.facebook.com">
+                <img  src="./img/logotipo-oficial-facebook.svg" alt="Logotipo de facebook" class="logo-fb d-inline-block align-text-top">
+                Facebook
+            </a>
+            <a class="navbar-brand animate__animated item_img logo-II" target="_blank" href="https://www.instagram.com">
+                <img  src="./img/logotipo-oficial-instagram.svg" alt="Logotipo de instagram" class="logo-ig d-inline-block align-text-top">
+                Instagram
+            </a>
+        </div>
         </div>
       </div>
     </nav>
     <!-- ------------------------------- header -------------------------------- -->
     <header id="header" class="container-fluid">
       <div class="row align-items-center">
-          <div id="logo_container" class="col-12 d-flex justify-content-center">
-              <img src="./img/Logo.png" class="img-fluid animate__animated animate__backInLeft" alt="Logo de Higher LED" id="higherLed_logo">
-          </div>
-          <div class="col-12 d-flex justify-content-center">
-              <h1 class="animate__animated animate__fadeIn" id="title">Paneles LED para cultivos de interior</h1>
-          </div>
+        <div id="logo_container" class="col-12 d-flex justify-content-center">
+          <a href="./index.html">
+            <img src="./img/Logo.svg" class="img-fluid animate__animated animate__backInLeft"
+                        alt="Logo de Higher LED" id="higherLed_logo">
+          </a>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <h1 class="animate__animated animate__fadeIn" id="title">Productos</h1>
+        </div>
       </div>
-  </header>
+    </header>
     <!-- -------------------------------- main --------------------------------- -->
+    <main class="container-fluid principal">
 
-    <main class="container d-flex justify-content-around principal main_container">
-
-      <div class="row">
-        <div class="d-flex justify-content-center">
-          <h2 class="animate__animated animate__fadeIn subtitle">Toda la variedad en iluminación LED</h2>
-        </div>
-
-        <div class="col-12">
-          <div class="card product">
-            <img src="./img/products-img/panel-led-100w.png" class="card-img-top"
-              alt="Panel LED Chip on Board Full spectrum 100 watts">
+      <section class="row productList bg-light">
+        <h2 class="darkText subtitle d-flex justify-content-center">Paneles Chip on LED</h2>
+        <article class="col d-flex justify-content-center product_container">
+          <div class="card" style="width: 18rem;">
+            <img src="./img/products-img/panel-led-100w-min.png" class="card-img-top"
+              alt="Panel Chip on LED espectro completo 100 watts.">
             <div class="card-body">
-              <h5 class="card-title product_title">Panel LED 100w</h5>
-              <p class="card-text product_text">$1800</p>
+              <h5 class="card-title">Panel 100w full spectrum</h5>
+              <p class="card-text darkText">$1350</p>
               <div class="d-flex justify-content-center">
-                <a href="buy.html" class="btn btn-primary btn_buy animate__animated">Comprar</a>
+                <a href="buy-product.php" class="btn btn-primary btn_buy animate__animated">Comprar</a>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-12">
-          <div class="card product">
-            <img src="./img/products-img/panel-led-cob-200w.png" class="card-img-top"
-              alt="Panel LED Chip on Board Full spectrum 200 watts">
+        </article>
+        <article class="col d-flex justify-content-center product_container">
+          <div class="card" style="width: 18rem;">
+            <img src="./img/products-img/panel-led-cob-200w-min.png" class="card-img-top"
+              alt="Panel Chip on LED espectro completo 200 watts.">
             <div class="card-body">
-              <h5 class="card-title product_title">Panel LED 200w</h5>
-              <p class="card-text product_text">$4500</p>
+              <h5 class="card-title">Panel 200w full spectrum</h5>
+              <p class="card-text darkText">$2600</p>
               <div class="d-flex justify-content-center">
-                <a href="buy.html" class="btn btn-primary btn_buy animate__animated">Comprar</a>
+                <a href="buy-product.php" class="btn btn-primary btn_buy animate__animated">Comprar</a>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-12">
-          <div class="card product">
-            <img src="./img/products-img/growtech_panel.jpg" class="card-img-top"
-              alt="Panel LED Full spectrum 300 watts">
+        </article>
+        <article class="col d-flex justify-content-center product_container">
+          <div class="card" style="width: 18rem;">
+            <img src="./img/products-img/growtech_panel-min.png" class="card-img-top"
+              alt="Panel Chip on LED espectro completo 300 watts.">
             <div class="card-body">
-              <h5 class="card-title product_title">Panel LED 300w</h5>
-              <p class="card-text product_text">$5400</p>
+              <h5 class="card-title">Panel 300w full spectrum</h5>
+              <p class="card-text darkText">$4000</p>
               <div class="d-flex justify-content-center">
-                <a href="buy.html" class="btn btn-primary btn_buy animate__animated">Comprar</a>
+                <a href="buy-product.php" class="btn btn-primary btn_buy animate__animated">Comprar</a>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-12">
-          <div class="card product">
-            <img src="./img/products-img/panel-led-400w.png" class="card-img-top"
-              alt="Panel LED Full spectrum 400 watts">
+        </article>
+        <article class="col d-flex justify-content-center product_container">
+          <div class="card" style="width: 18rem;">
+            <img src="./img/products-img/panel-led-400w-min.png" class="card-img-top"
+              alt="Panel Chip on LED espectro completo 400 watts.">
             <div class="card-body">
-              <h5 class="card-title product_title">Panel LED 400w</h5>
-              <p class="card-text product_text">$7200</p>
+              <h5 class="card-title">Panel 400w full spectrum</h5>
+              <p class="card-text darkText">$5250</p>
               <div class="d-flex justify-content-center">
-                <a href="buy.html" class="btn btn-primary btn_buy animate__animated">Comprar</a>
+                <a href="buy-product.php" class="btn btn-primary btn_buy animate__animated">Comprar</a>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-12">
-          <div class="card product">
-            <img src="./img/products-img/panel-led.png" class="card-img-top" alt="Panel LED 500 watts">
+        </article>
+        <article class="col d-flex justify-content-center product_container">
+          <div class="card" style="width: 18rem;">
+            <img src="./img/products-img/panel-led-100w-min.png" class="card-img-top"
+              alt="Panel LED galponero 250 watts por dos unidades.">
             <div class="card-body">
-              <h5 class="card-title product_title">Panel LED 500w</h5>
-              <p class="card-text product_text">$8750</p>
+              <h5 class="card-title">Panel Galponero 250w x 2 full spectrum</h5>
+              <p class="card-text darkText">$4200</p>
               <div class="d-flex justify-content-center">
-                <a href="buy.html" class="btn btn-primary btn_buy animate__animated">Comprar</a>
+                <a href="buy-product.php" class="btn btn-primary btn_buy animate__animated">Comprar</a>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-12">
-          <div class="card product">
-            <img src="./img/products-img/barra-led-320w.jpg" class="card-img-top" alt="Barra LED citizen 320 watts">
+        </article>
+        <article class="col d-flex justify-content-center product_container">
+          <div class="card" style="width: 18rem;">
+            <img src="./img/products-img/barra-led-320w-min.png" class="card-img-top"
+              alt="Barra LED citizen 320 watts 4 chips, alta durabilidad.">
             <div class="card-body">
-              <h5 class="card-title product_title">Panel LED 320w</h5>
-              <p class="card-text product_text">$7000</p>
+              <h5 class="card-title">Barra LED citizen 320w full spectrum</h5>
+              <p class="card-text darkText">$7200</p>
               <div class="d-flex justify-content-center">
-                <a href="buy.html" class="btn btn-primary btn_buy animate__animated">Comprar</a>
+                <a href="buy-product.php" class="btn btn-primary btn_buy animate__animated">Comprar</a>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-12">
-          <div id="product7" class="card product">
-            <img src="./img/products-img/led-citizen-6chips.png" class="card-img-top" alt="Panel LED citizen 420 watts">
+        </article>
+        <article class="col d-flex justify-content-center product_container">
+          <div class="card" style="width: 18rem;">
+            <img src="./img/products-img/led-citizen-6chips-min.png" class="card-img-top"
+              alt="Panel LED citizen 480 watts 6 chips, alta durabilidad.">
             <div class="card-body">
-              <h5 class="card-title product_title">Panel LED 420w</h5>
-              <p class="card-text product_text">$10.000</p>
+              <h5 class="card-title">Panel citizen 480w full spectrum</h5>
+              <p class="card-text darkText">$9000</p>
               <div class="d-flex justify-content-center">
-                <a href="buy.html" class="btn btn-primary btn_buy animate__animated">Comprar</a>
+                <a href="buy-product.php" class="btn btn-primary btn_buy animate__animated">Comprar</a>
               </div>
             </div>
           </div>
-        </div>
-
-      </div>
-
-
+        </article>
+      </section>
 
     </main>
 
@@ -183,12 +176,12 @@
       </div>
       <div class="fbFooter col-6 d-flex justify-content-end">
           <a href="https://www.facebook.com" target="_blank">
-              <img class="facebook1" src="./img/logotipo-oficial-facebook.png" alt="Logo de Facebook">
+              <img class="facebook1 animate__animated item_img" src="./img/logotipo-oficial-facebook.svg" alt="Logo de Facebook">
           </a>
       </div>
       <div class="igFooter col-6">
           <a href="https://www.instagram.com" target="_blank">
-              <img class="instagram1" src="./img/logotipo-oficial-instagram.png" alt="Logo de Instagram">
+              <img class="instagram1 animate__animated item_img" src="./img/logotipo-oficial-instagram.svg" alt="Logo de Instagram">
           </a>
       </div>
   </footer>

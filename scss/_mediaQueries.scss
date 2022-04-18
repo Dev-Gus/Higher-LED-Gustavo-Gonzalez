@@ -1,0 +1,399 @@
+/* ----------------------- BreakPoints / Media Queries ---------------------- */
+/* ---------------------------------- Index --------------------------------- */
+
+@media (min-width: 320px) {
+    .sliderPrincipal img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 425px) {
+    #higherLed_logo {
+        width: 360px;
+        height: 251px;
+        padding: 5px 5px;
+    }
+
+    .main_text {
+        margin-top: 1.5rem;
+    }
+
+    .img_container {
+        @include margin-top-bottom(2rem, 2rem);
+
+        .main_img {
+            width: 150%;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .img_container {
+        flex-wrap: wrap;
+
+        .main_img {
+            @include margin-top-bottom(1rem, 1rem);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .row_1 {
+        grid-template-areas: "album_img1"
+            "album_img2"
+            "album_img3";
+        grid-template-rows: auto auto auto;
+    }
+
+    .row_2 {
+        grid-template-areas: "album_img4"
+            "album_img5";
+        grid-template-rows: auto auto;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        p {
+            text-align: left;
+            font-size: $font-M
+        }
+
+        .subtitle {
+            font-size: 2rem;
+        }
+
+        label,
+        input {
+            font-size: $font-M
+        }
+
+        .img3 img {
+            width: 200%;
+        }
+
+        .album {
+            padding: 1rem;
+            margin: 5px;
+
+            .album_img {
+                padding: 5px;
+            }
+
+            .row_1 {
+                display: grid;
+                grid-template-areas: "album_img1 album_img2 album_img3";
+                grid-template-rows: auto;
+            }
+
+            .row_2 {
+                display: grid;
+                grid-template-areas: "album_img4 album_img5";
+                grid-template-rows: auto;
+            }
+        }
+
+        .us_text {
+            padding: 3%;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    #title {
+        font-size: $font-XL;
+    }
+
+    .principal {
+
+        .subtitle {
+            font-size: $font-XL - 0.9;
+        }
+
+        .carousel-inner {
+            width: 85%;
+            left: 7.5%;
+        }
+
+        .main_text {
+            padding: 0% 2%;
+        }
+
+        .img_container {
+            .main_img {
+                width: $w-75;
+            }
+        }
+
+        .img_container-2 img {
+            width: $w-75;
+        }
+
+        .form_container {
+            @include margin-top-bottom(7%, -3%);
+            background-color: #f5f6fa;
+
+            .formLabel input,
+            #textInput {
+                font-size: $font-M - 0.1;
+            }
+
+            #form_btn {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    #menuBar {
+        font-size: $font-M + 0.1;
+
+        .navbar-brand {
+            font-size: $font-L;
+        }
+
+        .logo-fb {
+            width: 43px;
+            height: 38px;
+        }
+
+        .logo-ig {
+            width: 46px;
+            height: 40px;
+        }
+    }
+
+    #title {
+        font-size: $font-XL;
+    }
+
+    .principal {
+        .subtitle {
+            font-size: 420%;
+        }
+
+        .btn_fix1 {
+            top: 0%;
+        }
+    }
+
+    #title {
+        font-size: 470%;
+    }
+
+    .centerTitle,
+    #location {
+        font-size: 370%;
+    }
+
+    .formText {
+        font-size: 230%;
+    }
+
+    p,
+    label,
+    input {
+        font-size: $font-L
+    }
+
+    .location {
+        height: 60rem;
+    }
+
+    #googleMaps {
+        width: $w-75 + 5%;
+        height: auto;
+    }
+
+    .dropdown-item {
+        font-size: $font-M - 0.1;
+    }
+
+    .product_title {
+        font-size: $font-XL - 0.2;
+    }
+
+    .product_text {
+        font-size: $font-XL - 0.4;
+    }
+
+    .btn_buy {
+        font-size: 1.4rem;
+    }
+
+    .us_title {
+        font-size: 3rem;
+    }
+
+    .facebook1 {
+        width: 3.7rem;
+        height: 3.7rem;
+    }
+
+    .instagram1 {
+        width: 3.8rem;
+        height: 3.8rem;
+    }
+}
+
+@media (min-width: 2560px) {
+    #menuBar {
+        .home {
+            font-size: $font-XL - 0.6;
+            position: relative;
+            bottom: 3.5px;
+        }
+
+        .dropdown-item {
+            font-size: $font-L + 0.3;
+        }
+
+        .logo-I {
+            font-size: $font-L + 0.5;
+            position: relative;
+            right: 3.5rem;
+
+            .logo-fb {
+                width: 4rem;
+                height: 3.5rem;
+                position: relative;
+                bottom: 6px;
+                right: 11px;
+            }
+        }
+
+        .logo-II {
+            font-size: $font-L + 0.5;
+
+            .logo-ig {
+                width: 4rem;
+                height: 3.7rem;
+                position: relative;
+                bottom: 6px;
+            }
+        }
+    }
+
+    #higherLed_logo {
+        width: 50%;
+        height: auto;
+        left: 25%;
+    }
+
+    #title {
+        font-size: 666%;
+    }
+
+    .principal {
+        .img_container {
+            @include margin-top-bottom(4rem, 4rem);
+
+            .main_img {
+                width: $w-75 + 5%;
+            }
+        }
+
+        .subtitle {
+            font-size: 595%;
+        }
+
+        .main_text {
+            margin: 1rem;
+            padding: 1.5rem
+        }
+
+        p,
+        label,
+        input {
+            font-size: $font-XL - 0.2;
+        }
+
+        .footerTitle {
+            font-size: $font-XL + 0.8;
+        }
+
+        .fbFooter a {
+            padding-right: 2%;
+        }
+
+        .igFooter a {
+            padding-left: 2%;
+        }
+
+        .form_container {
+            .formLabel input,
+            #textInput {
+                font-size: $font-M - 0.1;
+            }
+
+            #textInput {
+                height: 20rem;
+            }
+    
+            .formLabel input {
+                height: 5rem;
+                font-size: $font-L + 0.7;
+            }
+    
+            #textInput {
+                font-size: $font-L + 0.7;
+            }
+    
+            #form_btn {
+                font-size: 2.7rem;
+            }
+        }
+
+        .locationContainer {
+            padding-bottom: 3rem;
+        }
+
+        .dropdown-item {
+            font-size: $font-L + 0.7;
+        }
+
+        .us_title {
+            font-size: 5rem;
+        }
+    }
+
+    .footerTitle {
+        font-size: 395%;
+    }
+
+    .facebook1 {
+        width: 5.7rem;
+        height: 5.7rem;
+        margin-right: 3%;
+    }
+
+    .instagram1 {
+        width: 5.8rem;
+        height: 5.8rem;
+        margin-left: 3%;
+    }
+
+}
+
+/* --------------------------------- Galería -------------------------------- */
+
+@media (min-width: 280px) and (max-width: 575px) {
+    .gallery_container img {
+        width: 100%;
+    }
+
+    .flex-row {
+        display: flex;
+        padding: 0%;
+    }
+
+    .column {
+        padding: 5px;
+    }
+
+    .column img {
+        margin-top: 2rem;
+    }
+}

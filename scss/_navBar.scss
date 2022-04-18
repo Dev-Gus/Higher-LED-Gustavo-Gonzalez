@@ -7,27 +7,28 @@ background: linear-gradient(to bottom,  #f3c5bd 0%,#e86c57 0%,#ea2803 35%,#ff660
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 ); /* IE6-9 */
 }
 
-.btn_buy:hover {
-    font-weight: bold;
-    color: gold;
-    animation: tada;
-    animation-duration: 2s;
+.menu_item {
+    @include btn_properties();
 }
 
-.btn_buy {
-    background: $mainColor;
+.home {
+    @include btn_properties();
 }
 
-.facebook {
-    width: 1.5rem;
-    height: 1.5rem;
-    padding-bottom: 2px;
-    padding-right: 2px;
+.social_items {
+    flex-wrap: wrap;
+
+    .item_img {
+        @include social-logos-animation();
+    }
 }
 
-.instagram {
-    width: 1.5rem;
-    height: 1.5rem;
-    padding-bottom: 2px;
-    padding-right: 2px;
+.logo-fb {
+    width: 30px;
+    height: 24px;
+}
+
+.logo-ig {
+    width: 32px;
+    height: 26px;
 }

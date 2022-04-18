@@ -12,3 +12,15 @@
     margin-top: 5px;
     margin-bottom: 1rem;
 }
+
+.facebook1 {
+    width: 2.7rem;
+    height: 2.7rem;
+    @include social-logos-animation();
+}
+
+.instagram1 {
+    width: 2.8rem;
+    height: 2.8rem;
+    @include social-logos-animation();
+}
