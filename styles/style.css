@@ -135,7 +135,7 @@ body {
       padding: 1rem;
       margin: 5px; }
       body .principal .album .album_img {
-        padding: 5px; }
+        padding: 5px 0%; }
       body .principal .album .row_1 {
         display: grid; }
       body .principal .album .row_2 {
