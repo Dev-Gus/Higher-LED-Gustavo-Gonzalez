@@ -91,6 +91,8 @@ body {
     background: #ff4400 linear-gradient(90deg, #ff4400 0%, #ffa200 50%, #ff4400 100%); }
     body .principal .carousel-inner {
       padding-top: 2rem; }
+    body .principal .main_text {
+      margin-top: 1.5rem; }
     body .principal .img3 {
       margin-top: 1rem;
       margin-bottom: 1rem; }
@@ -147,7 +149,8 @@ body {
     body .principal .us-container {
       margin: 0% 1rem; }
       body .principal .us-container .us_text {
-        color: black; }
+        color: black;
+        padding: 1rem; }
     body .principal .productList {
       margin: 5px; }
       body .principal .productList .product_container {
@@ -193,8 +196,6 @@ body {
     width: 360px;
     height: 251px;
     padding: 5px 5px; }
-  .main_text {
-    margin-top: 1.5rem; }
   .img_container {
     margin-top: 2rem;
     margin-bottom: 2rem; }
@@ -385,6 +386,8 @@ body {
     font-size: 2.5rem; }
   .principal .us_title {
     font-size: 5rem; }
+  .principal .info_btn {
+    font-size: 2rem; }
   .footerTitle {
     font-size: 395%; }
   .facebook1 {
