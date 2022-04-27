@@ -1,10 +1,12 @@
+/* --------------------------- Variables gloables --------------------------- */
+
 //Reset
 * {
     margin: 0%;
     padding: 0%;
 }
 
-//Variables globales
+//Colores
 $colors:(
     'principal': linear-gradient(90deg, rgba(11,7,91,1) 0%, rgba(12,96,159,1) 50%, rgba(13,5,99,1) 100%),
     'secondary': rgba(255,68,0,1) linear-gradient(90deg, rgba(255,68,0,1) 0%, rgba(255,162,0,1) 50%, rgba(255,68,0,1) 100%),
